@@ -27,7 +27,7 @@ setuptools.setup(
      ],
      entry_points={
             'console_scripts': [
-                "ctd = main.ctd:main",
+                "ctd = ctd_main.ctd:main",
             ],
         },
 )
