@@ -34,7 +34,7 @@ def compare():
 	show_diff_org = "".join(combine_org).replace(" ","")
 	show_diff_comp = "".join(combine_comp).replace(" ","")
 
-	print(f"First:\t{yellow}{original}\n{reset}Difference: {red}{show_diff_org}{reset}")
+	print(f"Original:\t{yellow}{original}\n{reset}Difference:\t{red}{show_diff_org}{reset}")
 	#print(f"Second:\t{yellow}{compare} | {reset}Difference: {red}{show_diff_comp}{reset}")
 
 
