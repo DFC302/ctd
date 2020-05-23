@@ -3,6 +3,7 @@
 import sys
 import difflib
 from colorama import Fore, Style
+import re
 
 def compare():
 	green = Fore.GREEN
@@ -33,8 +34,8 @@ def compare():
 	show_diff_org = "".join(combine_org).replace(" ","")
 	show_diff_comp = "".join(combine_comp).replace(" ","")
 
-	print(f"First:\t{yellow}{original} | {reset}Difference: {red}{show_diff_org}{reset}")
-	print(f"Second:\t{yellow}{compare} | {reset}Difference: {red}{show_diff_comp}{reset}")
+	print(f"First:\t{yellow}{original}\n{reset}Difference: {red}{show_diff_org}{reset}")
+	#print(f"Second:\t{yellow}{compare} | {reset}Difference: {red}{show_diff_comp}{reset}")
 
 
 def main():
